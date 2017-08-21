@@ -1,0 +1,650 @@
+/*
+* @Author: godfather
+* @Date:   2017-08-02 09:33:10
+* @Last Modified by:   godfather
+* @Last Modified time: 2017-08-08 15:15:40
+*/
+li ul{
+	 background:white;
+	 display: none;
+}
+
+li:hover ul{display: block;}
+/* li下的ul为隐藏状态，li添加hover是ul显示 */
+.banner-event{
+	height: 80px;
+	background: black;
+	position: relative;
+}
+.event {
+	background: url(../images/eventbg.jpg) no-repeat;
+	height: 80px;
+	position: relative;
+}
+.event a {
+	width: 100%;
+	height: 80px;
+	display: block;
+}
+.event i {
+	display: block;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	width: 20px;
+	height: 20px;
+	font-size: 14px;
+	color: #4d4d4d;
+	background: rgba(13,13,13,1);
+	text-align: center;
+	line-height: 20px;
+}
+/* 以上是广告点击区域 */
+.shortcut {
+	height: 30px;
+	background: #e3e4e5;
+	border-bottom: 1px solid #ddd;
+	color: #999;
+	line-height: 30px;
+}
+/* 整体的捷径部分 */
+.shortcut li{
+	float: left;
+}
+/* 定义了整体的li都为左浮动， */
+.province {
+	position: relative;
+	z-index: 21;
+	margin-left: 200px;
+	height: 28px;
+	line-height: 28px;
+}
+
+.province li div{
+	padding: 0 7px;
+	position: relative;
+	z-index: 1;
+}
+.pro-ico {
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background: url(../images/pro-span.gif) no-repeat;
+}
+.pro-cens {
+	position: absolute;
+	top: 30px;
+	left: 0;
+	width: 300px;
+	padding: 10px;
+	border: 1px solid #ccc;
+}
+.pro-cens li{
+	width: 60px;
+	height: 24px;
+	padding: 2px 0;
+}
+.pro-cens li span{
+	float: left;
+	padding: 0 8px;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+}
+.pro-cens li span:hover{
+	background: rgba(204,204,204,.3);
+	color: #c60c1b;
+}
+.pro1{
+	color: white;
+	background: red;
+}
+.topnav .spacer{
+	width: 1px;
+	height: 10px;
+	background: #ccc;
+	margin: 11px 5px 0 5px;
+	padding: 0;
+}
+
+.my-jd{
+	position: relative;
+}
+.my-jd div{
+	position: relative;
+	z-index: 2;
+}
+.my-jd > ul{
+	position: absolute;
+	top: 30px;
+	left: 0;
+	z-index: 1;
+	width: 265px;
+	border: 1px solid #ccc;
+	padding: 10px 0 10px 15px;
+}
+.my-jd > ul li{
+	width: 126px;
+	height: 24px;
+} 
+.my-jd .division{
+	width: 280px;
+	height: 1px;
+	background: #e3e4e5;
+	margin: 10px -15px; 
+}
+.client-serve {
+	position: relative;
+}
+.client-serve div{
+	position: relative;
+	z-index: 2;
+}
+.client-serve > ul {
+	position: absolute;
+	top: 30px;
+	right: 0px;
+	z-index: 1;
+	width: 170px;
+	padding: 10px 0;
+	border: 1px solid #ccc;
+}
+.client-serve > ul li{
+	width: 70px;
+	height: 24px;
+	padding-left: 15px;
+}
+.client-serve .title {
+	font-weight: bold;
+	color: #666;
+	width: 155px;
+}
+.client-serve .division{
+	width: 170px;
+	height: 1px;
+	background: #e3e4e5;
+	margin-top: 10px; 
+	padding-left: 0;
+}
+.webnav div{
+	position: relative;
+	z-index: 7;
+}
+.webnav > ul{
+	position: absolute;
+	top: 30px;
+	right: -85px;
+	z-index: 6;
+	width: 1188px;
+	padding: 15px 0;
+	border: 1px solid #ccc;
+}
+.webnav dl{
+	height: 149px;
+	width: 255px;
+	padding-left: 20px;
+	border-right: 1px solid #e3e4e5;
+}
+.webnav dl.webnav1 {
+	width: 340px;
+}
+.webnav dl dt{
+	font-weight: bold;
+	color: #666;
+}
+.webnav dl li{
+	width: 85px;
+	height: 24px;
+}
+.phone-jd div.pos-rel{
+	width: 60px;
+}
+.phone-jd .code{
+	position: absolute;
+	top: 30px;
+	right: 0;
+	z-index: 2;
+	width: 60px;
+	height: 60px;
+	padding: 4px 3px;
+	border: 1px solid #ccc;
+	background: url(../images/code.png) no-repeat center;
+}
+.code i{
+	position: absolute;
+	top: -5px;
+	left: 50%;
+	z-index: 2;
+	width: 0;
+	height: 0;
+	margin: -5px;
+	border: 5px solid rgba(0,0,0,0);
+	border-bottom-color:white; 
+}
+.phone-jd ul img{
+	width: 70px;
+	height: 70px;
+	margin: 2px;
+}
+.phone-jd .code-con {
+	position: absolute;
+	top: 30px;
+	right: 0;
+	z-index: 2;
+	border: 1px solid #ccc;
+	border-bottom: 3px solid #60575a; 
+}
+.phone-jd .code-con li{
+	width: 190px;
+	height: 70px;
+	padding: 15px 0;
+	border-bottom: 1px solid #e3e4e5;
+}
+.phone-jd .code-con .code-w{
+	width: 74px;
+	height: 74px;
+	border: 1px solid #e3e4e5;
+	margin: 0 5px;
+}
+.phone-jd .code-con h6{
+	width: 94px;
+	height: 17px;
+	color: #555;
+	line-height: 17px;
+}
+.code-con h6 a{
+	color: #555;
+}
+.code-con h6 a:hover {
+	color: #555;
+}
+.phone-jd .code-con p{
+	width: 94px;
+	height: 17px;
+	line-height: 17px;
+	margin: 3px 0;
+	color: red;
+}
+.code-con p a{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background: url(../images/sprite_mobile@1x.png) no-repeat;
+}
+.code-con p a.android{
+	background: url(../images/sprite_mobile@1x.png) no-repeat left -25px;
+}
+.code-con p a.ipad{
+	background: url(../images/sprite_mobile@1x.png) no-repeat left -52px;
+}
+/* 以上是捷径部分的CSS */
+.header{
+	height: 140px;
+	background: #f6f6f6;
+}
+.logo {
+	position: absolute;
+	top: -31px;
+	left: 0;
+	width: 190px;
+	height: 170px;
+}
+.logo a{
+	display: block;
+	width: 190px;
+	height: 170px;
+	text-indent: -999px;
+	background:white url(../images/logo.v2.png) no-repeat;
+}
+.search {
+	position: absolute;
+	top: 25px;
+	left: 320px;
+	width: 550px;
+	height: 67px;
+}
+.search input[type="text"] {
+	width: 494px;
+	height: 33px;
+	padding-left: 4px;
+	line-height: 33px;
+	color: #999;
+	border: 1px solid red;
+}
+.search input[type="submit"] {
+	width: 50px;
+	height: 35px;
+	background: url(../images/search-btnbg.gif) no-repeat;
+} 
+.search form a{
+	position: absolute;
+	top: 10px;
+	right: 65px;
+	width: 19px;
+	height: 15px;
+	display: block;
+	background: url(../images/form-abg.gif) no-repeat left -15px;
+}
+.search form a:hover{
+	background: url(../images/form-abg.gif) no-repeat;
+}
+.search p a{
+	float: left;
+	height: 32px;
+	line-height: 32px;
+	margin-right: 10px;
+}
+.shopping-cart {
+	position: absolute;
+	top: 25px;
+	right: 96px;	
+	
+}
+.shopping-cart > div {
+	position: relative;
+	z-index: 1;
+	width: 188px;
+	height: 33px;
+	text-align: center;
+	background: #fff;
+	line-height: 33px;
+	color: red;
+	border: 1px solid #e3e4e5;
+}
+.shopping-cart:hover div {
+	border-color: #ccc;
+	border-bottom: 2px solid #fff;
+}
+.shopping-cart:hover p{
+	display: block;
+}
+.shopping-cart > div i{
+	display: inline-block;
+}
+.shopping-cart  .shop-cartbg {
+	width: 16px;
+	height: 16px;
+	background: url(../images/shopping-cartbg.gif) no-repeat;
+}
+.shopping-cart  .shop-cartnum {
+	position: absolute;
+	top: 5px;
+	right: 34px;
+	width: 12px;
+	height: 12px;
+	background: red;
+	border: 1px solid red;
+	border-radius: 50%;
+	color: #fff;
+	line-height: 12px;
+}
+.shopping-cart p{
+	display: none;
+	width: 222px;
+	height: 49px;
+	padding: 10px 0 10px 86px;
+	border: 1px solid #ccc;
+	background: #fff url(../images/shop-pbg.png) no-repeat 25px 10px;
+	line-height: 49px;
+	position: absolute;
+	top: 35px;
+	right: 0;
+}
+.headnav {
+	position: absolute;
+	left: 200px;
+	bottom: 0;
+	width: 790px;
+	height: 40px;
+}
+.headnav li{
+	float: left;
+	line-height: 40px;
+	padding: 0 16px;
+	font-size: 16px;
+	font-weight: bold;
+}
+.headnav  a{
+	color: #555;
+}
+.headnav  a:hover{
+	color: #c60c16;
+}
+.headnav .head-span {
+	width: 1px;
+	height: 10px;
+	background: #ccc;
+	padding: 0;
+	margin: 15px 4px 0px 6px;
+}
+.f-pin {
+	position: absolute;
+	right: 0;
+	top: 90px;
+}
+.f-pin a{
+	width: 190px;
+	height: 40px;
+	display: block;
+	text-indent: -9999px;
+	background: url(../images/jd-fupin.png) no-repeat;
+}
+/* 以上是头部区域 */
+.banner {
+	height: 480px;
+	background: yellow;
+	color: #fff;
+}
+.banner a{
+	color: #fff;
+	font-size: 14px;
+}
+.banner a:hover {
+	color: #c60c1b;
+}
+.leftsidebar {
+	width: 190px;
+	padding: 17px 0 15px 0;
+	background: #6e6568;
+}
+.leftsidebar > ul li{
+	position: relative;
+	width: 178px;
+	height: 28px;
+	padding-left: 12px;
+	line-height: 28px;
+}
+.leftsidebar > ul li:hover {
+	background: rgb(153,147,149);
+}
+
+.leftsidebar .sidebar-link {
+	padding-left: 20px;
+	height: 24px;
+}
+.leftsidebar .sidebar-link a {
+	float: left;
+	padding: 0 10px;
+	margin-right: 10px;
+	background: #6e6568;
+}
+.leftsidebar .sidebar-link span {
+	margin-left: 5px;
+}
+.sidebar-show {
+	padding: 10px 0 0 20px;
+}
+.sidebar-show dt {
+	width:80px; 
+	text-align:right;
+	}
+.sidebar-show dt a{
+	font-size:10px; 
+	color:#666;
+	font-weight:bold; 
+	line-height:36px; 
+}
+.sidebar-show dt span {
+	margin:0 13px 0 9px;
+}
+.sidebar-show dd{
+	width:700px; 
+	height:36px;
+	border-bottom:1px solid #eee;
+	line-height:36px; 
+}
+.sidebar-show dd{
+	width:700px; 
+	height:36px;
+	border-bottom:1px solid #eee;
+	line-height:36px; 
+}
+.sidebar-show dd a{
+	font-size:10px; 
+	color:#666; 
+	padding:0 10px;
+	border-left:1px solid #e0e0e0;
+	}
+.leftsidebar .a-link1{
+	width:168px; 
+	height:144px;
+	margin-right:15px;
+	}
+.leftsidebar .a-link1 a{
+	float:left;  
+	height:35px;
+	margin:0 1px 1px 0;
+	}
+.leftsidebar .a-link2{
+	margin-top:10px;
+	width:169px; 
+	margin-right:15px;
+	}
+.leftsidebar .a-link2 a {
+	float:left;  
+	height:134px;
+	margin:0 1px 1px 0;
+	}
+.leftsidebar .device {
+	position: absolute;
+	top: -17px;
+	left: 190px;
+	z-index: 2;
+	width: 998px;
+	height: 450px;
+	padding: 20px 0 10px 0;
+	border: 1px solid #e3e4e5;
+	background: #f7f7f7;
+	display:none; 
+}
+.jydq:hover device{
+	display:block; 
+}
+
+.banner-con {
+	position: absolute;
+	top: 0;
+	left: 200px;
+	width: 790px;
+	height: 340px;
+}
+.banner-con > ul {
+	width: 790px;
+	height: 340px;
+	overflow: hidden;
+}
+.banner-con > ul li {
+	float: left;
+}
+.banner-con > ul a{
+	display: block;
+	width: 790px;
+	height: 340px;
+	font-size: 50px;
+	background: url(../images/banner-1.png) no-repeat;
+}
+.banner-con > a {
+	display: block;
+	width: 30px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	font-size: 20px;
+	margin-top: -30px;
+	background: rgba(0,0,0,.1);
+}
+.banner-con > a:hover {
+	background: rgba(0,0,0,.5);
+}
+.banner-con .left-arrow {
+	position: absolute;
+	left: 0;
+	top: 50%;
+}
+.banner-con .right-arrow {
+	position: absolute;
+	right: 0;
+	top: 50%;
+}
+.banner-con .arrow-btm {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	padding: 4px 8px;
+	background: rgba(255,255,255,.3); 
+	margin-left: -90px;
+	border-radius: 10px;
+}
+.arrow-btm a{
+	float: left;
+	height: 12px;
+	width: 12px;
+	background: #fff;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+.arrow-btm a.btm {
+	margin-right: 0;
+}
+.banner-btm {
+	position: absolute;
+	bottom: 0;
+	left: 200px;
+	width: 790px;
+	height: 130px;
+}
+.rightsidebar{
+	position:absolute;
+	top:0;
+	right:0;
+}
+.top-rightsidebar{
+	width:158px;
+	height:84px;
+	border:1px solid #e6e6e6; 
+	background:white;
+	padding:15px 17px 16px 15px; 
+	}
+.top-rightsidebar .photo{
+	width:40px;
+	height:40px;
+	padding:3px;
+	border:2px solid #c9a65b;
+	border-radius:50%;
+	}
+.photo img {
+	width:40px;
+	height:40px;
+	border-radius:50%; 
+	}
+.sidebar-login {
+	width:100px;
+	color:#666; 
+	line-height:20px; 
+	margin-left:8px; 
+	}
+.sidebar-login a {
+	color:#666; 
+	font-size:10px; 
+	margin-left:8px; 
+	}
